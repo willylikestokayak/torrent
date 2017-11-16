@@ -1,5 +1,12 @@
 class ArticlesController < ApplicationController
 
+  authenticated :user do
+    resources :article, only: [:new, :create, :edit, :update, :destroy]
+  end
+  resources :article, only: [:index, :show]
+
+  before_action :authenticate_user!, :except => [:show, :index]
+
   def index
     @articles = Article.all
   end
