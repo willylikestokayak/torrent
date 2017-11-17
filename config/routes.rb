@@ -1,16 +1,10 @@
 Rails.application.routes.draw do
   
-  # get 'users/new'
-
-  # get 'users/index'
-
-  # get 'users/edit'
-
-  # get 'users/create'
-
   get "login" => "sessions#new"
   post "login" => "sessions#create"
   get "logout" => "sessions#destroy"
+  get "signup" => "users#new"
+  post "signup" => "users#create"
   root 'welcome#index'
 
   # get 'sessions/new'

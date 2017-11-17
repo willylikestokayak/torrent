@@ -1,11 +1,11 @@
 class ArticlesController < ApplicationController
 
-  authenticated :user do
-    resources :article, only: [:new, :create, :edit, :update, :destroy]
-  end
-  resources :article, only: [:index, :show]
+  # authenticated :user do
+  #   resources :article, only: [:new, :create, :edit, :update, :destroy]
+  # end
+  # resources :article, only: [:index, :show]
 
-  before_action :authenticate_user!, :except => [:show, :index]
+  # before_action :authenticate_user!, :except => [:show, :index]
 
   def index
     @articles = Article.all
@@ -54,6 +54,6 @@ class ArticlesController < ApplicationController
     
   def article_params
       params.require(:article).permit(:title, :text)
-    end
+  end
 
 end
