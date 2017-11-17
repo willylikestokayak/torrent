@@ -6,6 +6,10 @@ body {
     background-color: #ADB0B1;
 }
 
+.nav-wrapper {
+    background-color: #255C69;
+}
+
 .header {
     font-family: 'Kaushan Script', cursive;
     font-weight: bold;
