@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   post "signup" => "users#create"
   root 'welcome#index'
 
+  
+
   # get 'sessions/new'
   # get 'sessions/create'
   # get 'sessions/destroy'

@@ -1,3 +1,17 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Kaushan Script', cursive; */
+
 body {
     background-color: #ADB0B1;
+}
+
+.header {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
 }
